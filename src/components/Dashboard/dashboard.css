@@ -1,0 +1,89 @@
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    background-color: #010101;
+    color: white;
+    gap: 20px;
+}
+
+.display-habits{
+    border-radius: 20px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    text-align: start;
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.todays-date{
+    color: #b3b3b3;
+}
+.todays-habits-heading{
+    margin-top: 30px;
+}
+.habit-list{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+/* Dates List */
+.dates-list{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.date-list-item{
+    height: 80px;
+    min-width: 70px;
+    border-radius: 10px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-list-item span{
+    font-weight: 700;
+}
+
+.active-date{
+    background-color: yellowgreen;
+    color: black;
+}
+
+.add-habits-btn{
+    position: fixed;
+    background-color: yellowgreen;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.add-habits-btn:hover{
+    box-shadow: 0 0 50px 0px rgb(170, 255, 0);
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .dashboard-container{
+        padding: 10px;
+    }
+    .display-habits{
+        width: 100%;
+    }
+    
+}

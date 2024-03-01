@@ -1,0 +1,67 @@
+.prevRecord-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 40px;
+}
+
+.prevRecord-container{
+    padding: 20px;
+    position: relative;
+    background-color: rgb(5, 5, 5);
+    border-radius: 20px;
+    max-width: 700px;
+}
+
+.prevRecord-container h3{
+    text-align: start;
+}
+
+.previous-record-list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    max-height: 500px;
+    overflow: scroll;
+    /* background-color: aqua; */
+
+}
+
+
+.delete-habit-btn{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 46, 46);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .prevRecord-container{
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .prevRecord-container{
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px 70px; */
+    }
+}

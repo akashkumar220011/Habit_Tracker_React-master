@@ -1,0 +1,103 @@
+.create-box-habit-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.create-habit-container{
+    max-width: 350px;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(5, 5, 5);
+    border-radius: 20px;
+}
+.create-habit-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-field label{
+    text-align: start;
+
+}
+.form-field{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.container-heading{
+    margin-bottom: 20px;
+}
+
+#habit-name, #habit-count{
+    /* margin-left: 10px; */
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgb(35, 35, 35);
+    color: rgb(180, 180, 180);
+    flex: 1;
+}
+.close-box-btn{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: rgb(5, 5, 5);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icons-selector{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;   
+    gap: 20px; 
+    justify-content: center;
+}
+
+.icon{
+    height: 65px;
+    width: 65px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon img{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.icon:hover{
+    outline: 2px solid yellowgreen;
+}
+
+.create-box-btn{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 30px;
+    background-color: yellowgreen;
+}
+

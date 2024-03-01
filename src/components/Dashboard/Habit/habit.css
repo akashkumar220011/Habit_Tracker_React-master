@@ -1,0 +1,152 @@
+.habit-container{
+    padding: 20px;
+    width: 220px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.habit-upperBody{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(26, 26, 26);
+    transition: all 0.3s;
+    cursor: pointer;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.habit-upperBody:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+.header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.habit-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.habit-image img{
+    height: 60%;
+    width: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.graph{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.graph .ant-progress-circle-trail{
+    stroke: rgba(228, 228, 228, 0.308);
+}
+.graph .ant-progress-text{
+    color: rgb(226, 226, 226) !important;
+}
+
+.habit-btns{
+    height: 40px;
+    width: 100%;
+    /* border-radius: 50px; */
+    /* margin-top: 20px; */
+    display: flex;
+    /* overflow: hidden; */
+}
+.habit-btns button{
+    flex: 1;
+    outline: none;
+    border: 0px solid yellowgreen;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    /* background-color: rgb(30, 30, 30); */
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.habit-btns .dec-count{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.habit-btns .dec-count:hover{
+    color: red;
+}
+
+.habit-btns .inc-count{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.habit-btns .inc-count:hover{
+    color: yellowgreen;
+}
+
+.habit-btns button:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+.header h4{
+    font-size: 20px;
+}
+
+
+/* Styling ANtd Css */
+.select-completition{
+    background-color: rgb(37, 37, 37);
+    border-radius: 40px ;
+
+}
+
+.select-completition .antd-select-tag{
+    width: 100%;
+    height: 40px;
+}
+
+.select-completition .ant-select-selector{
+    background-color: transparent !important;
+    color: white !important;
+    border-radius: 40px !important;
+    border: 1px solid rgba(170, 255, 0, 0.397) !important;
+}
+
+.select-completition .ant-select-arrow{
+    color: yellowgreen;
+}
+
+/* .select-completition .ant-select-open{
+    background-color: rgb(0, 0, 0) !important;
+} */
+
+
+/* Override the Select option background color */
+.ant-select-item-option {
+  color: white !important;
+}
+
+.ant-select-item-option:hover{
+    background-color: rgb(18, 18, 18) !important;
+    color: yellowgreen !important;
+}
+.ant-select-item-option-selected,
+.ant-select-item-option-selected:not(.ant-select-item-option-active) {
+  color: yellowgreen !important;
+  background-color: transparent !important;
+}
+
+
+.ant-select-dropdown{
+    background-color: rgb(32, 32, 32) !important;
+}

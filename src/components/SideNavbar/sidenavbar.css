@@ -1,0 +1,60 @@
+.sidebar-container{
+    width: 200px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 20px;
+
+    height: 100%;
+    padding: 20px;
+}
+
+.logo-name{
+    text-shadow: 1px 1px greenyellow;
+}
+
+/* Navigation Links */
+.navigation-list{
+    list-style: none;
+    margin-top: 100px;
+}
+
+.navigation-items{
+    padding: 15px;
+    margin-top: 10px;
+    text-align: start;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.navigation-items:hover{
+    background-color: rgb(51, 51, 51);
+}
+.navigation-items:hover .links{
+    color: greenyellow;
+}
+
+.active-nav{
+    background-color: rgb(51, 51, 51) !important;
+}
+
+.active-link{
+    color: greenyellow !important;
+}
+
+.links{
+    color: grey;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .sidebar-container{
+        display: none;
+    }
+    
+}

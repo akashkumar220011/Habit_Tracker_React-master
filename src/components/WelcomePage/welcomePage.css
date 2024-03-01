@@ -1,0 +1,123 @@
+.welcome-page-container{
+    height: 100vh;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-header{
+    font-size: 70px;
+    color: rgba(250, 250, 250);
+}
+.welcome-png{
+    height: 300px;
+}
+
+.welcome-quote{
+    color: rgba(250, 250, 250);
+}
+
+.letsBegin-btn{
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    padding: 12px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    
+    border: 1px solid greenyellow;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.781) ;
+    transition: all 0.3s;
+}
+
+.letsBegin-btn:hover{
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 0 0 100px 1px greenyellow;
+}
+
+
+/* User Name Dialogue Box */
+.userName-box-back, .user-gender-back{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-name-container, .user-gender-container{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .close-container{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    background-color: rgb(255, 59, 59);
+    color: aliceblue;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    cursor: pointer;
+} */
+
+.user-name{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    padding: none;
+    background: rgba(255, 255, 255, 0.329);
+    color: white;
+    width: 100%;
+    transition: all 0.3s;
+}
+.user-name:focus{
+    outline: 1px solid rgb(225, 255, 179);
+}
+.user-name::placeholder{
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.save-details-btn{
+    cursor: pointer;
+    text-align: center;
+    padding: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px solid greenyellow;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.781) ;
+}
+
+.user-gender-select{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    padding: none;
+    background: rgba(255, 255, 255, 0.329);
+    width: 100%;
+    transition: all 0.3s;
+}

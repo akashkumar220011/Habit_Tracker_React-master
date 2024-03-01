@@ -1,0 +1,33 @@
+.prevData-container{
+    padding: 20px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    /* min-width: 200px;
+    max-width: 250px; */
+    min-width: 30%;
+    flex: 1;
+}
+
+.selector-container label{
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:800px) {
+    .prevData-container{
+        min-width: 40% ;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .prevData-container{
+        min-width: 100%;
+    }
+}
+
+
